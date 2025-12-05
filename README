@@ -1,0 +1,141 @@
+DOCX to PDF Converter
+
+A lightweight, drag-and-drop desktop application built with Python to batch convert Microsoft Word documents (.docx) into PDF files.
+
+
+🚀 Features
+
+
+Drag & Drop Interface: Simply drag your files onto the application window.
+
+Batch Processing: Convert multiple files at once.
+
+Responsive UI: Uses threading to ensure the application remains responsive during the conversion process.
+
+Smart Path Handling: correctly handles file paths containing spaces.
+
+
+📋 Prerequisites
+
+Before running this script, ensure you have the following:
+
+
+
+Python 3.x installed.
+
+Microsoft Word installed on your computer.
+
+Note: This script relies on the docx2pdf library, which uses Microsoft Word's COM automation (Windows) or AppleScript (macOS) to perform perfect conversions.
+
+
+
+
+🛠️ Installation
+
+
+Clone this repository or download the docx_to_pdf.py file.
+
+Install the required Python libraries using pip:
+
+
+>
+_
+Collapse
+Copy code
+pip install tkinterdnd2 docx2pdf
+Collapse
+Copy code
+
+
+tkinterdnd2: Enables drag-and-drop functionality for Tkinter.
+
+docx2pdf: Handles the actual document conversion.
+
+
+💻 Usage
+
+
+Run the script from your terminal:
+
+
+>
+_
+Collapse
+Copy code
+python docx_to_pdf.py
+Collapse
+Copy code
+
+
+A window will appear.
+
+Select one or more .docx files from your file explorer.
+
+Drag and drop them into the white box in the application.
+
+The conversion will start automatically. The PDFs will be saved in the same folder as the original .docx files.
+
+
+📦 Building an Executable (.exe)
+
+If you want to share this tool with someone who doesn't have Python installed, you can compile it into a standalone executable using pyinstaller.
+
+
+
+Install PyInstaller:
+
+
+>
+_
+Collapse
+Copy code
+pip install pyinstaller
+Collapse
+Copy code
+
+
+Run the build command:
+
+
+>
+_
+Collapse
+Copy code
+pyinstaller --noconsole --onefile --additional-hooks-dir=. --collect-all tkinterdnd2 docx_to_pdf.py
+Collapse
+Copy code
+
+
+--noconsole: Hides the black command prompt window.
+
+--onefile: Bundles everything into a single .exe file.
+
+--collect-all tkinterdnd2: Ensures the drag-and-drop binaries are included.
+
+
+
+Your executable will be located in the dist/ folder.
+
+
+
+
+⚠️ Troubleshooting
+
+"Error: No .docx files found!"
+Ensure you are dropping actual .docx files. The script filters out other file types automatically.
+
+
+Conversion fails or hangs
+Since this tool automates Microsoft Word, ensure that:
+
+
+
+Microsoft Word is installed and activated.
+
+There are no dialog boxes open in Word (e.g., "Activate Office" popups) that might block the automation.
+
+
+📝 License
+
+This project is open-source. Feel free to modify and distribute it.
+
