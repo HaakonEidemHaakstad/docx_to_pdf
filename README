@@ -38,14 +38,13 @@ Clone this repository or download the docx_to_pdf.py file.
 Install the required Python libraries using pip:
 
 
->
-_
+'''
 Collapse
 Copy code
 pip install tkinterdnd2 docx2pdf
 Collapse
 Copy code
-
+'''
 
 tkinterdnd2: Enables drag-and-drop functionality for Tkinter.
 
