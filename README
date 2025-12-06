@@ -38,13 +38,9 @@ Clone this repository or download the docx_to_pdf.py file.
 Install the required Python libraries using pip:
 
 
-'''
-Collapse
-Copy code
+```python
 pip install tkinterdnd2 docx2pdf
-Collapse
-Copy code
-'''
+```
 
 tkinterdnd2: Enables drag-and-drop functionality for Tkinter.
 
@@ -57,14 +53,9 @@ docx2pdf: Handles the actual document conversion.
 Run the script from your terminal:
 
 
->
-_
-Collapse
-Copy code
+```python
 python docx_to_pdf.py
-Collapse
-Copy code
-
+```
 
 A window will appear.
 
@@ -79,30 +70,20 @@ The conversion will start automatically. The PDFs will be saved in the same fold
 
 If you want to share this tool with someone who doesn't have Python installed, you can compile it into a standalone executable using pyinstaller.
 
-
-
 Install PyInstaller:
 
-
->
-_
-Collapse
-Copy code
+```python
 pip install pyinstaller
 Collapse
 Copy code
-
+```
 
 Run the build command:
 
 
->
-_
-Collapse
-Copy code
+```python
 pyinstaller --noconsole --onefile --additional-hooks-dir=. --collect-all tkinterdnd2 docx_to_pdf.py
-Collapse
-Copy code
+```
 
 
 --noconsole: Hides the black command prompt window.
