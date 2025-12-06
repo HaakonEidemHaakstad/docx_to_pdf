@@ -53,7 +53,7 @@ docx2pdf: Handles the actual document conversion.
 Run the script from your terminal:
 
 
-```text
+```python
 python docx_to_pdf.py
 ```
 
@@ -74,8 +74,6 @@ Install PyInstaller:
 
 ```python
 pip install pyinstaller
-Collapse
-Copy code
 ```
 
 Run the build command:
