@@ -53,7 +53,7 @@ docx2pdf: Handles the actual document conversion.
 Run the script from your terminal:
 
 
-```python
+```text
 python docx_to_pdf.py
 ```
 
